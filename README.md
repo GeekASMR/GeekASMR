@@ -12,7 +12,7 @@
 
 ---
 
-<img src="https://github-readme-stats.vercel.app/api?username=GeekASMR&theme=tokyonight&hide_border=true&show_icons=true&include_all_commits=true&count_private=false" alt="Profile stats" align="right" width="420">
+<img src="https://raw.githubusercontent.com/GeekASMR/GeekASMR/main/github-metrics.svg" alt="Profile metrics" align="right" width="420">
 
 ### What I work on
 
@@ -76,4 +76,4 @@
 
 ---
 
-<sub>Stats cards above are rendered by community-hosted services (<a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a>, <a href="https://github.com/DenverCoder1/github-readme-streak-stats">streak-stats</a>) and refresh on demand. To plug in a richer <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a> SVG (rendered nightly via GitHub Actions), see <code>.github/workflows/metrics.yml</code> in this repo.</sub>
+<sub>The metrics SVG above is rendered nightly by <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a> via GitHub Actions (see <code>.github/workflows/metrics.yml</code>) and committed back to <code>main</code>. The streak / pin / top-langs cards use community-hosted services and may be a few minutes stale.</sub>
