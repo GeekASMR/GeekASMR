@@ -6,7 +6,7 @@
 
 **Windows 音频内核 / 虚拟音频驱动 / DAW 工具链 / 黑苹果**
 
-📍 深圳 · 🌐 [geek.asmrtop.cn](https://geek.asmrtop.cn/) · 💚 [赞助 WHQL 签名](https://ultra.asmrtop.cn/donate/)
+📍 哈尔滨 · 🌐 [geek.asmrtop.cn](https://geek.asmrtop.cn/) · 💚 [赞助 WHQL 签名](https://ultra.asmrtop.cn/donate/)
 
 </div>
 
