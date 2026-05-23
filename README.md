@@ -26,7 +26,6 @@
 <!-- 主页访问改用 hits.sh（实测稳定，不依赖国内代理） -->
 <a href="#"><img src="https://hits.sh/github.com/GeekASMR.svg?style=flat-square&label=%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE&color=E91E63&labelColor=555555" alt="主页访问"></a>
 <a href="https://github.com/GeekASMR"><img src="https://img.shields.io/github/followers/GeekASMR?label=%E5%85%B3%E6%B3%A8&style=flat-square&color=00599C" alt="关注"></a>
-<a href="https://github.com/GeekASMR"><img src="https://img.shields.io/github/stars/GeekASMR?label=%E6%80%BB%E6%98%9F%E6%A0%87&style=flat-square&color=FFD700" alt="星标"></a>
 
 </div>
 
