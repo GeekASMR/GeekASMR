@@ -65,47 +65,49 @@ def render_badge(label, value, label_bg="#555555", value_bg="#FFD700",
     渲染 shields.io flat-square 风格徽章 SVG.
     label 是中文 ("总星标"),value 是数字字符串.
 
-    宽度按字符近似估算: CJK ≈ 11px, ASCII ≈ 6.5px,加 left/right padding 各 8px.
+    宽度按字符近似估算: CJK / 全角 ≈ 14px,emoji ≈ 16px,ASCII ≈ 7.5px,空格 5px.
+    加左右各 pad=10px 留余量,避免被截断.
     """
-    def text_w(s, cjk_w=11.0, ascii_w=6.5):
+    def text_w(s):
         w = 0.0
         for ch in s:
-            if "\u4e00" <= ch <= "\u9fff" or "\u3000" <= ch <= "\u303f":
-                w += cjk_w
+            cp = ord(ch)
+            # CJK Unified Ideographs + 全角符号
+            if 0x4e00 <= cp <= 0x9fff or 0x3000 <= cp <= 0x303f or 0xff00 <= cp <= 0xffef:
+                w += 14.0
+            # emoji 块: Misc Symbols (2600-26FF), Dingbats (2700-27BF),
+            # Misc Symbols and Arrows (2B00-2BFF, 含 ⭐ U+2B50),
+            # Misc Tech (2300-23FF), Symbols & Pictographs (1F300-1FAFF, 1F600-1F64F)
+            elif (0x2600 <= cp <= 0x27bf or 0x2b00 <= cp <= 0x2bff
+                  or 0x2300 <= cp <= 0x23ff
+                  or 0x1f300 <= cp <= 0x1faff or 0x1f600 <= cp <= 0x1f64f):
+                w += 16.0
+            elif ch == " ":
+                w += 5.0
             else:
-                w += ascii_w
+                w += 7.5
         return w
 
-    pad = 8
-    label_w = int(text_w(label) + pad * 2)
-    value_w = int(text_w(value) + pad * 2)
-    total_w = label_w + value_w
+    pad = 10
     h = 20
+
+    label_with_icon = "⭐ " + label
+    label_w = int(round(text_w(label_with_icon) + pad * 2))
+    value_w = int(round(text_w(value) + pad * 2))
+    total_w = label_w + value_w
     label_cx = label_w / 2
     value_cx = label_w + value_w / 2
 
-    # 加 ⭐ emoji 视觉提示
-    label_with_icon = "⭐ " + label
-    label_w_icon = int(text_w(label_with_icon, ascii_w=8.0) + pad * 2)
-    total_w_icon = label_w_icon + value_w
-    label_cx_icon = label_w_icon / 2
-
     return f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="{total_w_icon}" height="{h}" role="img" aria-label="{label}: {value}">
+<svg xmlns="http://www.w3.org/2000/svg" width="{total_w}" height="{h}" viewBox="0 0 {total_w} {h}" role="img" aria-label="{label}: {value}">
   <title>{label}: {value}</title>
   <g shape-rendering="crispEdges">
-    <rect width="{label_w_icon}" height="{h}" fill="{label_bg}"/>
-    <rect x="{label_w_icon}" width="{value_w}" height="{h}" fill="{value_bg}"/>
+    <rect width="{label_w}" height="{h}" fill="{label_bg}"/>
+    <rect x="{label_w}" width="{value_w}" height="{h}" fill="{value_bg}"/>
   </g>
-  <g fill="{label_fg}" text-anchor="middle"
-     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif"
-     font-size="11" font-weight="600">
-    <text x="{label_cx_icon}" y="14">{label_with_icon}</text>
-  </g>
-  <g fill="{value_fg}" text-anchor="middle"
-     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif"
-     font-size="11" font-weight="700">
-    <text x="{value_cx}" y="14">{value}</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif" font-size="11" font-weight="600" text-anchor="middle">
+    <text x="{label_cx}" y="14" fill="{label_fg}">{label_with_icon}</text>
+    <text x="{value_cx}" y="14" fill="{value_fg}" font-weight="700">{value}</text>
   </g>
 </svg>
 '''
