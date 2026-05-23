@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="100%" preserveAspectRatio="xMidYMid meet">
+<style>
+  text { font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; font-weight: 700; }
+</style>
+<text x="466.4" y="202.4" font-size="56" fill="#7AB8FF">WDM 内核驱动</text>
+<text x="431.5" y="101.5" font-size="56" fill="#C26FFF">VST3 桥接</text>
+<text x="554.9" y="264.1" font-size="44" fill="#FF4080">Network Ultra</text>
+<text x="710.5" y="64.3" font-size="44" fill="#FF4080">低延迟音频</text>
+<text x="576.0" y="320.6" font-size="36" fill="#7AB8FF">零拷贝 IPC</text>
+<text x="810.7" y="132.0" font-size="36" fill="#FF4080">WHQL 签名</text>
+<text x="253.7" y="305.8" font-size="36" fill="#7AB8FF">UDP 数据面</text>
+<text x="237.5" y="211.8" font-size="28" fill="#FF4080">JitterBuffer</text>
+<text x="513.2" y="29.6" font-size="28" fill="#7AB8FF">Opus 编码</text>
+<text x="410.8" y="349.9" font-size="28" fill="#5DD583">FLAC 无损</text>
+<text x="284.4" y="163.3" font-size="28" fill="#5DD583">WebSocket</text>
+<text x="835.4" y="304.3" font-size="22" fill="#7AB8FF">Studio One</text>
+<text x="491.6" y="267.6" font-size="22" fill="#7AB8FF">LUNA</text>
+<text x="736.1" y="101.3" font-size="22" fill="#7AB8FF">UAD</text>
+<text x="457.4" y="302.8" font-size="22" fill="#777">Tauri</text>
+<text x="838.0" y="189.0" font-size="22" fill="#bbb">Rust</text>
+<text x="372.3" y="252.4" font-size="22" fill="#bbb">C++ 17</text>
+<text x="344.8" y="57.0" font-size="22" fill="#7AB8FF">Go 1.22</text>
+<text x="653.8" y="19.8" font-size="18" fill="#ddd">WDK</text>
+<text x="733.0" y="131.4" font-size="18" fill="#777">CMake</text>
+<text x="946.7" y="215.1" font-size="18" fill="#5DD583">PowerShell</text>
+<text x="298.5" y="102.2" font-size="18" fill="#7AB8FF">Windows 11</text>
+<text x="615.6" y="351.9" font-size="18" fill="#C26FFF">ASIO</text>
+<text x="784.4" y="333.5" font-size="18" fill="#777">WASAPI</text>
+<text x="220.1" y="242.1" font-size="18" fill="#C26FFF">MMDevice</text>
+<text x="984.2" y="293.6" font-size="16" fill="#999">内核回调</text>
+<text x="599.8" y="136.7" font-size="16" fill="#5DD583">循环缓冲</text>
+<text x="419.9" y="24.2" font-size="16" fill="#bbb">PortClass</text>
+<text x="956.1" y="51.9" font-size="16" fill="#ddd">MiniPort</text>
+<text x="275.7" y="43.2" font-size="16" fill="#ddd">KMixer</text>
+<text x="948.5" y="171.1" font-size="16" fill="#5DD583">跨网协作</text>
+<text x="690.7" y="353.6" font-size="16" fill="#FF4080">NAT 穿透</text>
+<text x="943.8" y="249.7" font-size="16" fill="#C26FFF">HMAC 鉴权</text>
+<text x="878.7" y="328.8" font-size="14" fill="#bbb">bcrypt</text>
+<text x="491.9" y="133.9" font-size="14" fill="#ddd">DPAPI 加密</text>
+<text x="316.8" y="356.0" font-size="14" fill="#999">OpenCore</text>
+<text x="209.9" y="68.8" font-size="14" fill="#5DD583">Hackintosh</text>
+<text x="202.7" y="174.4" font-size="14" fill="#ddd">百灵达 UMC</text>
+<text x="966.1" y="19.1" font-size="14" fill="#999">VST3 SDK</text>
+<text x="786.0" y="300.9" font-size="14" fill="#FF4080">JUCE</text>
+<text x="683.6" y="135.3" font-size="14" fill="#FF4080">反作弊</text>
+<text x="990.5" y="119.1" font-size="14" fill="#ddd">驱动签名</text>
+<text x="938.3" y="335.4" font-size="14" fill="#999">中心服务器</text>
+<text x="246.9" y="344.0" font-size="12" fill="#7AB8FF">信号转发</text>
+<text x="318.1" y="254.7" font-size="12" fill="#C26FFF">音频路由</text>
+<text x="468.9" y="234.1" font-size="12" fill="#C26FFF">INF 安装</text>
+<text x="570.2" y="352.7" font-size="12" fill="#5DD583">LSP</text>
+<text x="817.7" y="356.8" font-size="12" fill="#C26FFF">Hooking</text>
+<text x="1050.6" y="93.9" font-size="12" fill="#bbb">内存映射</text>
+<text x="386.1" y="126.5" font-size="12" fill="#ddd">SDR</text>
+<text x="323.6" y="12.9" font-size="12" fill="#bbb">自适应缓冲</text>
+<text x="273.7" y="124.1" font-size="12" fill="#ddd">UDP 18902</text>
+<text x="944.7" y="356.7" font-size="12" fill="#999">TCP 18900</text>
+</svg>
