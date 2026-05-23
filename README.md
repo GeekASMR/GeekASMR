@@ -4,7 +4,7 @@
 
 ![banner](https://capsule-render.vercel.app/api?type=waving&color=0:E91E63,50:9C27B0,100:00599C&height=220&section=header&text=GeekASMR&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=Windows%20%E9%9F%B3%E9%A2%91%E5%86%85%E6%A0%B8%20%C2%B7%20%E8%99%9A%E6%8B%9F%E9%A9%B1%E5%8A%A8%20%C2%B7%20VST3%20%E6%A1%A5%E6%8E%A5&descAlignY=60&descSize=18&animation=fadeIn)
 
-<!-- ─────────────────────────  关键词堆叠（新增）  ───────────────────────── -->
+<!-- ─────────────────────────  关键词堆叠（自渲染 SVG）  ───────────────────────── -->
 
 <div align="center">
 
@@ -15,18 +15,18 @@
 
 </div>
 
-<!-- ─────────────────────────  打字机 + 状态 ─────────────────────────────── -->
+<!-- ─────────────────────────  打字机（中文等线字体） ─────────────────────── -->
 
 <div align="center">
 
-[![打字机](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=600&color=E91E63&center=true&vCenter=true&width=720&lines=%E8%AE%A9+Windows+%E7%B3%BB%E7%BB%9F%E9%9F%B3%E9%A2%91%E4%BB%A5%E9%87%87%E6%A0%B7%E7%BA%A7%E7%B2%BE%E5%BA%A6%E6%8A%B5%E8%BE%BE+DAW;%E5%9C%A8%E5%86%85%E6%A0%B8%E5%B1%82%E6%89%93%E9%80%9A%E9%9F%B3%E9%A2%91+%C2%B7+%E5%9C%A8%E5%BA%94%E7%94%A8%E5%B1%82%E6%8E%92%E9%93%B6%E9%92%88;%E5%81%9A%E4%B8%80%E4%BB%B6%E8%83%BD%E7%94%A8%E5%8D%81%E5%B9%B4%E7%9A%84%E4%B8%9C%E8%A5%BF;WDM+%E2%86%92+VST3+%E2%86%92+DAW+%E2%86%92+%E5%85%A8%E4%B8%96%E7%95%8C)](#)
+[![打字机](https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=500&size=22&duration=3000&pause=600&color=E91E63&center=true&vCenter=true&width=720&lines=%E8%AE%A9+Windows+%E7%B3%BB%E7%BB%9F%E9%9F%B3%E9%A2%91%E4%BB%A5%E9%87%87%E6%A0%B7%E7%BA%A7%E7%B2%BE%E5%BA%A6%E6%8A%B5%E8%BE%BE+DAW;%E5%9C%A8%E5%86%85%E6%A0%B8%E5%B1%82%E6%89%93%E9%80%9A%E9%9F%B3%E9%A2%91+%C2%B7+%E5%9C%A8%E5%BA%94%E7%94%A8%E5%B1%82%E6%8E%92%E9%93%B6%E9%92%88;%E5%81%9A%E4%B8%80%E4%BB%B6%E8%83%BD%E7%94%A8%E5%8D%81%E5%B9%B4%E7%9A%84%E4%B8%9C%E8%A5%BF;WDM+%E2%86%92+VST3+%E2%86%92+DAW+%E2%86%92+%E5%85%A8%E4%B8%96%E7%95%8C)](#)
 
 📍 哈尔滨 &nbsp;·&nbsp; 🌐 [geek.asmrtop.cn](https://geek.asmrtop.cn/) &nbsp;·&nbsp; 💚 [赞助 WHQL 签名](https://ultra.asmrtop.cn/donate/)
 
-<!-- 主页访问改用 visitor-badge.laobi.icu（不易被墙、中文 label 不会截断） -->
-[![访问](https://visitor-badge.laobi.icu/badge?page_id=GeekASMR.GeekASMR&left_text=主页访问&left_color=555&right_color=E91E63)](#)
-[![关注](https://img.shields.io/github/followers/GeekASMR?label=关注&style=flat-square&color=00599C)](https://github.com/GeekASMR)
-[![星标](https://img.shields.io/github/stars/GeekASMR?label=总星标&style=flat-square&color=FFD700)](https://github.com/GeekASMR)
+<!-- 主页访问改用 hits.sh（实测稳定，不依赖国内代理） -->
+<a href="#"><img src="https://hits.sh/github.com/GeekASMR.svg?style=flat-square&label=%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE&color=E91E63&labelColor=555555" alt="主页访问"></a>
+<a href="https://github.com/GeekASMR"><img src="https://img.shields.io/github/followers/GeekASMR?label=%E5%85%B3%E6%B3%A8&style=flat-square&color=00599C" alt="关注"></a>
+<a href="https://github.com/GeekASMR"><img src="https://img.shields.io/github/stars/GeekASMR?label=%E6%80%BB%E6%98%9F%E6%A0%87&style=flat-square&color=FFD700" alt="星标"></a>
 
 </div>
 
@@ -36,24 +36,14 @@
 
 把 Windows 系统音频以**采样级精度**送进 DAW，再让它跨越公网与协作者实时同步。
 
-```mermaid
-flowchart LR
-    A[🪟 Windows<br>系统音频] --> B[⚙️ WDM<br>内核驱动]
-    B --> C[🔌 VST3<br>桥接插件]
-    C --> D[🎚 DAW<br>数字音频工作站]
-    C -.-> E[🌐 Network Ultra<br>跨网协作中继]
-    E -.-> F[👥 远端 DAW]
+<div align="center">
 
-    classDef pink fill:#E91E63,stroke:#fff,color:#fff,font-weight:bold
-    classDef purple fill:#9C27B0,stroke:#fff,color:#fff,font-weight:bold
-    classDef blue fill:#00599C,stroke:#fff,color:#fff,font-weight:bold
-    classDef gray fill:#555,stroke:#fff,color:#fff
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GeekASMR/GeekASMR/main/pipeline-dark.svg">
+  <img src="https://raw.githubusercontent.com/GeekASMR/GeekASMR/main/pipeline-light.svg" alt="WDM2VST 音频流程" width="100%">
+</picture>
 
-    class A,F gray
-    class B,C pink
-    class D blue
-    class E purple
-```
+</div>
 
 ---
 
@@ -131,22 +121,24 @@ WDM 内核驱动 + 5 个 VST3，把任意 Windows 程序的声音变成 DAW 里�
 
 <div align="center">
 
-<a href="https://github.com/GeekASMR">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=GeekASMR&locale=cn&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true&custom_title=%E2%9A%A1+GitHub+%E7%BB%9F%E8%AE%A1&title_color=E91E63&icon_color=00599C&text_color=333333" alt="GitHub 统计" />
-</a>
-<a href="https://github.com/GeekASMR">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GeekASMR&locale=cn&layout=compact&theme=default&hide_border=true&langs_count=8&custom_title=%F0%9F%94%A4+%E5%B8%B8%E7%94%A8%E8%AF%AD%E8%A8%80&title_color=E91E63&text_color=333333" alt="常用语言" />
-</a>
+<!-- 365 天提交活动折线图 (彩色 + 中文 label, ackinc/github-readme-activity-graph) -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=GeekASMR&theme=react-dark&hide_border=true&radius=12&line=E91E63&point=00599C&color=fffefe&bg_color=00000000&custom_title=%F0%9F%93%88+%E6%9C%80%E8%BF%91+365+%E5%A4%A9%E6%8F%90%E4%BA%A4%E8%B6%8B%E5%8A%BF" alt="提交趋势" width="100%">
 
-<a href="https://github.com/GeekASMR">
-  <img height="170" src="https://streak-stats.demolab.com?user=GeekASMR&locale=zh_CN&theme=default&hide_border=true&date_format=Y.n.j&ring=E91E63&fire=E91E63&currStreakLabel=E91E63" alt="提交连续天数" />
-</a>
+<br><br>
 
-<br>
+<!-- 立体方块贡献图 (yoshi389111/github-profile-3d-contrib, GitHub Action 每日生成) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GeekASMR/GeekASMR/main/profile-3d-contrib/profile-night-rainbow.svg">
+  <img src="https://raw.githubusercontent.com/GeekASMR/GeekASMR/main/profile-3d-contrib/profile-rainbow.svg" alt="立体贡献图" width="100%">
+</picture>
 
-<a href="https://github.com/GeekASMR">
-  <img src="https://github-profile-trophy.vercel.app/?username=GeekASMR&theme=flat&no-bg=true&no-frame=true&margin-w=8&column=7&title=Stars,Followers,Commits,Repositories,PullRequest,Issues,Reviews" alt="奖杯" />
-</a>
+<br><br>
+
+<!-- Snake 吃 contributions 动画 (Platane/snk, GitHub Action 每日生成) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GeekASMR/GeekASMR/output/github-contribution-grid-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/GeekASMR/GeekASMR/output/github-contribution-grid-snake.svg" alt="Snake 吃 contributions" width="100%">
+</picture>
 
 </div>
 
@@ -155,8 +147,7 @@ WDM 内核驱动 + 5 个 VST3，把任意 Windows 程序的声音变成 DAW 里�
 <div align="center">
 
 <sub>
-统计图来自 <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a> · <a href="https://github.com/DenverCoder1/github-readme-streak-stats">streak-stats</a> · <a href="https://github.com/ryo-ma/github-profile-trophy">github-profile-trophy</a>，已开启简体中文 locale。<br>
-关键词云 SVG 由仓库内 <code>scripts/gen_keywords.py</code> 一次性生成（不依赖外部服务，永远不会 404）。徽章实时数据来自 shields.io，缓存约 1 小时。
+关键词云 SVG 由仓库内 <code>scripts/gen_keywords.py</code> 一次性生成；流程图 SVG 由 <code>scripts/gen_pipeline.py</code> 生成；立体贡献图来自 <a href="https://github.com/yoshi389111/github-profile-3d-contrib">github-profile-3d-contrib</a>；Snake 来自 <a href="https://github.com/Platane/snk">Platane/snk</a>；活动折线来自 <a href="https://github.com/Ashutosh00710/github-readme-activity-graph">activity-graph</a>。徽章实时数据来自 shields.io，缓存约 1 小时。
 </sub>
 
 <br><br>

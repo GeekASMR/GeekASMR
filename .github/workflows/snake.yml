@@ -1,0 +1,41 @@
+name: Snake
+
+on:
+  schedule:
+    # 每天 19:00 UTC = 03:00 Asia/Shanghai 跑一次
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/snake.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+    name: generate
+    steps:
+      # 1. 拉源码 (其实 snake action 不需要 checkout,但 push-to-output 阶段需要)
+      - uses: actions/checkout@v4
+
+      # 2. 生成 snake SVG (亮色 + 暗色两个版本)
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # 多个输出目标用 ?colors=...&color_dots=... 等查询参数控制配色
+          # 亮色: 蓝紫渐变格子 + 粉色蛇身,匹配我们的 banner 配色
+          # 暗色: 加 palette=github-dark
+          outputs: |
+            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=%23E91E63&color_dots=%23ebedf0%2C%23c6e48b%2C%2300599C%2C%239C27B0%2C%23E91E63
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23FF4080&color_dots=%23161b22%2C%230e4429%2C%23006d32%2C%2326a641%2C%2339d353
+
+      # 3. 推到 output 分支 (README.md 引用的是 output 分支的 raw URL)
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
