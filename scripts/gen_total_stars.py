@@ -88,7 +88,7 @@ def render_badge(label, value, label_bg="#555555", value_bg="#FFD700",
                 w += 7.5
         return w
 
-    pad = 10
+    pad = 14
     h = 20
 
     label_with_icon = "⭐ " + label
