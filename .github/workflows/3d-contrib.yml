@@ -1,0 +1,50 @@
+name: 3D Contrib
+
+on:
+  schedule:
+    # 每天 18:30 UTC = 02:30 Asia/Shanghai 跑一次,保证 contributions 数据新鲜
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/3d-contrib.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate-3d-contrib:
+    runs-on: ubuntu-latest
+    name: generate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      # 把 SVG 里硬编码的英文 label 替换成中文。
+      # github-profile-3d-contrib 不支持 i18n,但每个 SVG 末尾的文本是固定的:
+      #   Commit / Issue / PullReq / Review / Repo / contributions
+      - name: Localize SVG labels to Chinese
+        run: |
+          set -eux
+          for f in profile-3d-contrib/*.svg; do
+            sed -i \
+              -e 's/>Commit</>提交</g' \
+              -e 's/>Issue</>议题</g' \
+              -e 's/>PullReq</>PR</g' \
+              -e 's/>Review</>评审</g' \
+              -e 's/>Repo</>仓库</g' \
+              -e 's/>contributions</>次贡献</g' \
+              "$f"
+          done
+
+      - name: Commit & push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add profile-3d-contrib
+          git diff --staged --quiet || git commit -m "chore: refresh 3d contributions (zh)"
+          git push
