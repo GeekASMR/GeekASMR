@@ -1,0 +1,39 @@
+name: Total Stars
+
+on:
+  schedule:
+    # 每天 19:30 UTC = 03:30 Asia/Shanghai 跑一次,跟其它 SVG 错开避免互相竞争
+    - cron: "30 19 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/total-stars.yml
+      - scripts/gen_total_stars.py
+
+permissions:
+  contents: write
+
+jobs:
+  generate-total-stars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate total-stars badge SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: python scripts/gen_total_stars.py
+
+      - name: Commit & push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add total-stars.svg
+          git diff --staged --quiet || git commit -m "chore: refresh total stars badge"
+          git push
