@@ -8,27 +8,27 @@
 <defs>
 <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/></marker>
 </defs>
-<line x1="260" y1="135.0" x2="314" y2="135.0" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
-<line x1="520" y1="135.0" x2="574" y2="135.0" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
-<line x1="780" y1="135.0" x2="834" y2="135.0" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
-<line x1="680.0" y1="170" x2="680.0" y2="224" stroke="#666" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
-<line x1="780" y1="265.0" x2="834" y2="265.0" stroke="#666" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
-<rect x="60" y="100" width="200" height="70" rx="10" ry="10" fill="#555555" opacity="0.95"/>
-<text class="label top" x="160.0" y="128" fill="#ffffff" text-anchor="middle">🪟 Windows</text>
-<text class="label bot" x="160.0" y="150" fill="#ffffff" text-anchor="middle">系统音频</text>
-<rect x="320" y="100" width="200" height="70" rx="10" ry="10" fill="#E91E63" opacity="0.95"/>
-<text class="label top" x="420.0" y="128" fill="#ffffff" text-anchor="middle">⚙️ WDM</text>
-<text class="label bot" x="420.0" y="150" fill="#ffffff" text-anchor="middle">内核驱动</text>
-<rect x="580" y="100" width="200" height="70" rx="10" ry="10" fill="#E91E63" opacity="0.95"/>
-<text class="label top" x="680.0" y="128" fill="#ffffff" text-anchor="middle">🔌 VST3</text>
-<text class="label bot" x="680.0" y="150" fill="#ffffff" text-anchor="middle">桥接插件</text>
-<rect x="840" y="100" width="200" height="70" rx="10" ry="10" fill="#00599C" opacity="0.95"/>
-<text class="label top" x="940.0" y="128" fill="#ffffff" text-anchor="middle">🎚 DAW</text>
-<text class="label bot" x="940.0" y="150" fill="#ffffff" text-anchor="middle">数字音频工作站</text>
-<rect x="580" y="230" width="200" height="70" rx="10" ry="10" fill="#9C27B0" opacity="0.95"/>
-<text class="label top" x="680.0" y="258" fill="#ffffff" text-anchor="middle">🌐 Network Ultra</text>
-<text class="label bot" x="680.0" y="280" fill="#ffffff" text-anchor="middle">跨网协作中继</text>
-<rect x="840" y="230" width="200" height="70" rx="10" ry="10" fill="#555555" opacity="0.95"/>
-<text class="label top" x="940.0" y="258" fill="#ffffff" text-anchor="middle">👥 远端 DAW</text>
-<text class="label bot" x="940.0" y="280" fill="#ffffff" text-anchor="middle">全世界</text>
+<line x1="300" y1="135.0" x2="374" y2="135.0" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="600" y1="135.0" x2="674" y2="135.0" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="900" y1="135.0" x2="974" y2="135.0" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="790.0" y1="170" x2="790.0" y2="224" stroke="#666" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="900" y1="265.0" x2="974" y2="265.0" stroke="#666" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<rect x="80" y="100" width="220" height="70" rx="10" ry="10" fill="#555555" opacity="0.95"/>
+<text class="label top" x="190.0" y="128" fill="#ffffff" text-anchor="middle">🪟 Windows</text>
+<text class="label bot" x="190.0" y="150" fill="#ffffff" text-anchor="middle">系统音频</text>
+<rect x="380" y="100" width="220" height="70" rx="10" ry="10" fill="#E91E63" opacity="0.95"/>
+<text class="label top" x="490.0" y="128" fill="#ffffff" text-anchor="middle">⚙️ WDM</text>
+<text class="label bot" x="490.0" y="150" fill="#ffffff" text-anchor="middle">内核驱动</text>
+<rect x="680" y="100" width="220" height="70" rx="10" ry="10" fill="#E91E63" opacity="0.95"/>
+<text class="label top" x="790.0" y="128" fill="#ffffff" text-anchor="middle">🔌 VST3</text>
+<text class="label bot" x="790.0" y="150" fill="#ffffff" text-anchor="middle">桥接插件</text>
+<rect x="980" y="100" width="220" height="70" rx="10" ry="10" fill="#00599C" opacity="0.95"/>
+<text class="label top" x="1090.0" y="128" fill="#ffffff" text-anchor="middle">🎚 DAW</text>
+<text class="label bot" x="1090.0" y="150" fill="#ffffff" text-anchor="middle">数字音频工作站</text>
+<rect x="680" y="230" width="220" height="70" rx="10" ry="10" fill="#9C27B0" opacity="0.95"/>
+<text class="label top" x="790.0" y="258" fill="#ffffff" text-anchor="middle">🌐 Network Ultra</text>
+<text class="label bot" x="790.0" y="280" fill="#ffffff" text-anchor="middle">跨网协作中继</text>
+<rect x="980" y="230" width="220" height="70" rx="10" ry="10" fill="#555555" opacity="0.95"/>
+<text class="label top" x="1090.0" y="258" fill="#ffffff" text-anchor="middle">👥 远端 DAW</text>
+<text class="label bot" x="1090.0" y="280" fill="#ffffff" text-anchor="middle">全世界</text>
 </svg>
