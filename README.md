@@ -26,7 +26,7 @@
 <!-- 主页访问改用 hits.sh（实测稳定，不依赖国内代理）；总星标用自渲染 SVG 避开 shields.io token 池限流 -->
 <a href="#"><img src="https://hits.sh/github.com/GeekASMR.svg?style=flat-square&label=%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE&color=E91E63&labelColor=555555" alt="主页访问"></a>
 <a href="https://github.com/GeekASMR"><img src="https://img.shields.io/github/followers/GeekASMR?label=%E5%85%B3%E6%B3%A8&style=flat-square&color=00599C" alt="关注"></a>
-<a href="https://github.com/GeekASMR?tab=repositories"><img src="https://raw.githubusercontent.com/GeekASMR/GeekASMR/main/total-stars.svg" alt="总星标"></a>
+<a href="https://github.com/GeekASMR?tab=repositories"><img src="https://raw.githubusercontent.com/GeekASMR/GeekASMR/main/total-stars.svg?v=2" alt="总星标"></a>
 
 </div>
 
